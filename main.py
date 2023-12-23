@@ -7,7 +7,7 @@ score = []
 
 # using a while condition to loop through
 while count != number:
-    grade = input("Enter grade: ")
+    grade = input("Enter a grade: ").upper()
     if grade == "A":
         score = 5
     elif grade == "B":
@@ -21,7 +21,8 @@ while count != number:
     elif grade == "F":
         score = 0
     else:
-        print("invalid grade")
+        print("Invalid grade")
+        grade = input("Enter a valid grade: ").upper()
 
     unit_load = int(input("Enter the unit load: "))
     # calculating grades
