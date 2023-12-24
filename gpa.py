@@ -7,7 +7,6 @@ score = []
 
 # using a while condition to loop through
 while count != number:
-    global grade
     grade = input("Enter grade: ").upper()
     if grade == "A":
         score = 5
